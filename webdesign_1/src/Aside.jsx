@@ -10,10 +10,8 @@ const AsideContainer = styled.aside`
 function Aside() {
     return (
         <AsideContainer>
-            <h3>사이드바</h3>
             <ul>
                 <li>
-                    공지사항
                     <img
                         src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d"
                         alt="공지 배너"

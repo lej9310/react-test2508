@@ -8,20 +8,21 @@ const HeaderWrap = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background: #004080;
+  background: Black;
   color: white;
   position: relative;
-   z-index: 9999;
+  z-index: 9999;
 `;
 
 const Logo = styled.div`
-  font-size: 24px;
+  font-size: 40px;
   font-weight: bold;
 `;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 40px;
+  gap: 140px;
+  padding:0 90px;
 `;
 
 const MenuItem = styled.div`
@@ -31,7 +32,8 @@ const MenuItem = styled.div`
 const MainLink = styled(Link)`
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
   &:hover {
     color: #ffcc00;
   }
@@ -39,6 +41,7 @@ const MainLink = styled(Link)`
 
 const SubMenu = styled(motion.ul)`
   position: absolute;
+  width: 140px;  
   top: 40px;
   left: 0;
   background: white;
@@ -58,7 +61,7 @@ const SubItem = styled(Link)`
   border-radius: 4px;
   &:hover {
     background: #eee;
-    color: #004080;
+    font-weight: bold;
   }
 `;
 
@@ -66,17 +69,17 @@ export default function Header() {
     const [hoverIndex, setHoverIndex] = useState(null);
 
     const menus = [
-        { title: "Menu1", link: "/menu1", subs: ["Sub1", "Sub2", "Sub3"] },
-        { title: "Menu2", link: "/menu2", subs: ["Sub1", "Sub2", "Sub3"] },
-        { title: "Menu3", link: "/menu3", subs: ["Sub1", "Sub2", "Sub3"] },
-        { title: "Menu4", link: "/menu4", subs: ["Sub1", "Sub2", "Sub3"] },
+        { title: "Outer", link: "/Outer", subs: ["자켓", "코드", "점퍼"] },
+        { title: "Top", link: "/Top", subs: ["니트/가디건", "셔츠/블라우스", "티셔츠"] },
+        { title: "Bottom", link: "/Bottom", subs: ["팬츠", "스커트"] },
+        { title: "Dress", link: "/Dress", subs: ["포멀", "캐쥬얼"] },
     ];
 
     return (
         <HeaderWrap>
             <Logo>
                 <Link to="/" style={{ color: "white", textDecoration: "none" }}>
-                    LOGO
+                    LEJ Mall
                 </Link>
             </Logo>
 

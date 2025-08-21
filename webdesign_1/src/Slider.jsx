@@ -2,16 +2,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
-const slides = [
-    "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-    "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-];
+import slide1 from './assets/images/slide1.jfif';
+import slide2 from './assets/images/slide2.jfif';
+import slide3 from './assets/images/slide3.jfif';
+
+const slides = [slide1, slide2, slide3];
 
 const SlideWrapper = styled.article`
   position: relative;
   width: 100%;
-  height: 300px; /* 슬라이드 높이 고정 */
+  height: 600px;
   overflow: hidden;
   border-radius: 8px;
 `;

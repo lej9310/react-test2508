@@ -25,10 +25,10 @@ const Layout = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         {/* 메인 메뉴별 라우팅 */}
-                        <Route path="/menu1/*" element={<Page title="Menu 1" />} />
-                        <Route path="/menu2/*" element={<Page title="Menu 2" />} />
-                        <Route path="/menu3/*" element={<Page title="Menu 3" />} />
-                        <Route path="/menu4/*" element={<Page title="Menu 4" />} />
+                        <Route path="/menu1/*" element={<Page title="Outer" />} />
+                        <Route path="/menu2/*" element={<Page title="Top" />} />
+                        <Route path="/menu3/*" element={<Page title="Bottom" />} />
+                        <Route path="/menu4/*" element={<Page title="Dress" />} />
                     </Routes>
                 </Router>
                 <Slider />

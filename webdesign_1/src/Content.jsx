@@ -24,7 +24,7 @@ const TabMenu = styled.div`
 const TabItem = styled.button`
   flex: 1;
   padding: 8px 0;
-  background: ${(props) => (props.active ? "#004080" : "#ccc")};
+  background: ${(props) => (props.active ? "black" : "#6b6b6bff")};
   color: white;
   border: none;
   cursor: pointer;
@@ -39,7 +39,7 @@ const TabContent = styled.div`
 
 const NoticeList = styled.ul`
   list-style: none;
-  padding: 0;
+  padding: 10px 0;
   margin: 0;
   li {
     padding: 5px 0;
